@@ -13,17 +13,7 @@ const ContactCard: React.FC = () => {
     <>
       <StyledTitle>💬 Contact</StyledTitle>
       <StyledWrapper>
-        {CONFIG.profile.instagram && (
-          <a
-            href={`https://www.instagram.com/${CONFIG.profile.instagram}`}
-            rel="noreferrer"
-            target="_blank"
-          >
-            <AiOutlineInstagram className="icon" />
-            <div className="name">instagram</div>
-          </a>
-        )}
-        {CONFIG.profile.blog && (
+         {CONFIG.profile.blog && (
           <a
             href={`https://blog.naver.com/${CONFIG.profile.blog}`}
             rel="noreferrer"
@@ -34,9 +24,19 @@ const ContactCard: React.FC = () => {
             <div className="name">blog</div>
           </a>
         )}
+        {CONFIG.profile.instagram && (
+          <a
+            href={`https://www.instagram.com/${CONFIG.profile.instagram}`}
+            rel="noreferrer"
+            target="_blank"
+          >
+            <AiOutlineInstagram className="icon" />
+            <div className="name">instagram</div>
+          </a>
+        )}
         {CONFIG.profile.youtube && (
           <a
-            href={`https://www.youtube.com/in/@ngyou_t`}
+            href={`https://www.youtube.com/@ngyou_t`}
             rel="noreferrer"
             target="_blank"
           >
