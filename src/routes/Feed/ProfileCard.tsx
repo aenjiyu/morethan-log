@@ -10,16 +10,16 @@ const ProfileCard: React.FC<Props> = () => {
   return (
     <StyledWrapper>
       <div className="title">
-        <Emoji>💻</Emoji> Profile
+        <Emoji>💫</Emoji> Profile
       </div>
       <div className="content">
         <div className="top">
-          <Image src={CONFIG.profile.image} fill alt="" />
+          <Image className="topImage" src={CONFIG.profile.image} fill alt="" />
         </div>
         <div className="mid">
           <div className=" name">{CONFIG.profile.name}</div>
           <div className="role">{CONFIG.profile.role}</div>
-          <div className="text-sm mb-2">{CONFIG.profile.bio}</div>
+          <div className="text-sm mb-2 profile-align-center">{CONFIG.profile.bio}</div>
         </div>
       </div>
     </StyledWrapper>
@@ -53,6 +53,11 @@ const StyledWrapper = styled.div`
         display: block;
         padding-bottom: 100%;
       }
+
+      .topImage {
+        width: 171px;
+        object-fit: cover;
+      }
     }
     .mid {
       display: flex;
@@ -62,7 +67,7 @@ const StyledWrapper = styled.div`
       .name {
         font-size: 1.25rem;
         line-height: 1.75rem;
-        font-style: italic;
+        
         font-weight: 700;
       }
       .role {
@@ -71,6 +76,11 @@ const StyledWrapper = styled.div`
         line-height: 1.25rem;
         color: ${({ theme }) => theme.colors.gray11};
       }
+
+      .profile-align-center {
+        text-align: center;
+      }
+      
       .bio {
         margin-bottom: 0.5rem;
         font-size: 0.875rem;
