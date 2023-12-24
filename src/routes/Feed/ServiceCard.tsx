@@ -21,7 +21,7 @@ const ServiceCard: React.FC = () => {
             target="_blank"
           >
             <AiOutlineMail className="icon" />
-            <div className="name">EMAIL</div>
+            <div className="name">Email</div>
           </a>
         ))}
       </StyledWrapper>
