@@ -3,6 +3,7 @@ import React from "react"
 import {
   AiOutlineInstagram,
   AiOutlineMail,
+  AiOutlineTags,
   AiFillYoutube,
 } from "react-icons/ai"
 import styled from "@emotion/styled"
@@ -22,15 +23,15 @@ const ContactCard: React.FC = () => {
             <div className="name">instagram</div>
           </a>
         )}
-        {CONFIG.profile.email && (
+        {CONFIG.profile.blog && (
           <a
-            href={`mailto:${CONFIG.profile.email}`}
+            href={`https://blog.naver.com/${CONFIG.profile.blog}`}
             rel="noreferrer"
             target="_blank"
             css={{ overflow: "hidden" }}
           >
-            <AiOutlineMail className="icon" />
-            <div className="name">email</div>
+            <AiOutlineTags className="icon" />
+            <div className="name">blog</div>
           </a>
         )}
         {CONFIG.profile.youtube && (
@@ -40,7 +41,7 @@ const ContactCard: React.FC = () => {
             target="_blank"
           >
             <AiFillYoutube className="icon" />
-            <div className="name">linkedin</div>
+            <div className="name">youtube</div>
           </a>
         )}
       </StyledWrapper>
@@ -58,6 +59,7 @@ const StyledWrapper = styled.div`
   display: flex;
   padding: 0.25rem;
   flex-direction: column;
+  margin-bottom: 2.25rem;
   border-radius: 1rem;
   background-color: ${({ theme }) =>
     theme.scheme === "light" ? "white" : theme.colors.gray4};
