@@ -5,7 +5,7 @@ const CONFIG = {
     image: "/profile.jpg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "04년생 대학생",
     bio: "심리학과 재학 / 초중등 과외 / 스터디 운영",
-    email: "jsyoung0508@naver.com",
+    instagram: "ngyou0508",
     blog: "ngyou0508",
     youtube: "@ngyou_t",
   },
