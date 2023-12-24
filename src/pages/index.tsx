@@ -23,8 +23,9 @@ export const getStaticProps: GetStaticProps = async () => {
 
 const FeedPage: NextPageWithLayout = () => {
   const meta = {
-    title: "💫 ngyou-log",
-    description: "welcome to ngyou-log!",
+    title: CONFIG.blog.title,
+    description: CONFIG.blog.description,
+    type: "website",
     url: CONFIG.link,
   }
 
