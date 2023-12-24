@@ -14,7 +14,7 @@ const Footer: React.FC<Props> = ({ className }) => {
   return (
     <StyledWrapper className={className}>
       <a
-        href={`https://github.com/${CONFIG.profile.github}`}
+        href={`https://blog.naver.com/ngyou0508`}
         target="_blank"
         rel="noreferrer"
       >
