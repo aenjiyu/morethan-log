@@ -1,7 +1,6 @@
 import { CONFIG } from "site.config"
 import React from "react"
-import { AiOutlineMail,
-    AiFillCodeSandboxCircle } from "react-icons/ai"
+import { AiOutlineMail, AiFillCodeSandboxCircle } from "react-icons/ai"
 import styled from "@emotion/styled"
 import { Emoji } from "src/components/Emoji"
 
